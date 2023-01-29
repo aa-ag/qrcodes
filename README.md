@@ -1,3 +1,9 @@
 ### QR Generator
 
-Tinkering with Rust's `qrcode_generator` [crate](https://docs.rs/qrcode-generator/latest/qrcode_generator/).
+Tinkering with Rust's `qrcode_generator` [crate](https://crates.io/crates/qrcode-generator).
+
+#### Instlalation
+
+```
+cargo add qrcode-generator
+```
