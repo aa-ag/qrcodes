@@ -1,3 +1,7 @@
+use qrcode_generator::QrCodeEcc;
+
 fn main() {
-    println!("Hello, world!");
+    let result: Vec<Vec<bool>> = qrcode_generator::to_matrix("Hello world!", QrCodeEcc::Low).unwrap();
+
+    println!("{:?}", result);
 }
