@@ -1,7 +1,5 @@
 use qrcode_generator::QrCodeEcc;
 
 fn main() {
-    let result: Vec<Vec<bool>> = qrcode_generator::to_matrix("Hello world!", QrCodeEcc::Low).unwrap();
-
-    println!("{:?}", result);
+    qrcode_generator::to_png_to_file("Hello world!", QrCodeEcc::Low, 1024, "test_qr_code.png").unwrap();
 }
